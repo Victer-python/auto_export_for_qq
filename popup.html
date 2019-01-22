@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popup Page</title>
+  <meta charset="utf-8" />
+  <style>
+    div {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>QQ好友/群数据导出助手</h1>
+    <h2 id="td1"></h2>
+    <h3>每多导出一千群好友需要多等待近10s</h4>
+    <h3>数据类型</h3>
+    <ul>
+      <li>
+        <td width=10px>qq：</td>
+        <td width = 20px>全部好友</td>
+        <input id="i1" width=10px type="button" value="一键导出"/>
+      </li>
+      <li>
+        <td width=10px>群：</td>
+        <select id="qunSelect" width = 20px></select>
+        <input id="i2" width=10px type="button" value="一键导出"/>
+      </li>
+    </ul>
+  </div>
+  <script src="js/xlsx.full.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/FileSaver.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>

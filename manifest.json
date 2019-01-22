@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+	"name": "auto export for qq",
+	"version": "1.0.0",
+	"description": "This Extention can help you export frends and groups of qq",
+	"icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+	"page_action":
+	{
+		"default_icon": "img/icon.png",
+		"default_title": "我是pageAction",
+		"default_popup": "popup.html"
+	},
+	"permissions":
+	[	
+		"cookies",
+		"activeTab",
+		"idle",
+		"webRequest",
+		"declarativeContent",
+		"https://*.qq.com/"
+	],
+	"homepage_url": "https://qun.qq.com/member.html",
+	"background":
+	{
+		"scripts": ["js/background.js"]
+	}
+}
